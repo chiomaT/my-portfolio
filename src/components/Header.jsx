@@ -1,5 +1,8 @@
 import React, {useState} from "react";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars,FaLinkedin, } from "react-icons/fa";
+import {AiFillGithub} from "react-icons/ai"
+import {BsFillPersonDashFill} from "react-icons/bs"
+import {MdMarkEmailUnread} from "react-icons/md"
 
 const Header = () => {
     const [header, setHeader] = useState(false)
@@ -51,6 +54,33 @@ const Header = () => {
         </ul>
       </div>
       {/* social media icons */}
+      <div className="hidden lg:flex flex-col fixed left-0 top-[20%]">
+          <ul>
+              <li className=" w-[160px] h-[60px] flex justify-between items-center">
+                  <a href="https://www.linkedin.com/in/chiomat/" className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-200">
+                      LinkedIn <FaLinkedin size={30} />
+                  </a>
+              </li>
+
+              <li className=" w-[160px] h-[60px] flex justify-between items-center">
+                  <a href="#" className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-200">
+                      Github <AiFillGithub size={30} />
+                  </a>
+              </li>
+
+              <li className=" w-[160px] h-[60px] flex justify-between items-center">
+                  <a href="#" className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-200">
+                      Email <MdMarkEmailUnread size={30} />
+                  </a>
+              </li>
+
+              <li className=" w-[160px] h-[60px] flex justify-between items-center">
+                  <a href="#" className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-200">
+                      Resume <BsFillPersonDashFill size={30} />
+                  </a>
+              </li>
+          </ul>
+      </div>
       </div>
     
     
