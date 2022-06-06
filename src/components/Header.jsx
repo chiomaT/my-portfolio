@@ -3,6 +3,7 @@ import { FaTimes, FaBars,FaLinkedin, } from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai"
 import {BsFillPersonDashFill} from "react-icons/bs"
 import {MdMarkEmailUnread} from "react-icons/md"
+import {Link} from "react-scroll"
 
 const Header = () => {
     const [header, setHeader] = useState(false)
@@ -13,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="fixed bg-[#223117] flex justify-between items-center px-4 w-full h-[80px] text-gray-300">
+      <div className="fixed bg-[#252527] flex justify-between items-center px-4 w-full h-[80px] text-gray-300">
           <div className="header-logo text-[#e64096]">
           Header
           </div>
@@ -21,11 +22,31 @@ const Header = () => {
         {/* nav links */}
         <div className="nav-links">
         <ul className=" hidden md:flex">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li>
+          <Link to="home" smooth={true} duration={500}>
+          Home
+        </Link>
+        </li>
+          <li> 
+             <Link to="about" smooth={true} duration={500}>
+          About
+        </Link>
+        </li>
+          <li>
+          <Link to="skills" smooth={true} duration={500}>
+          Skills
+        </Link>
+          </li>
+          <li>
+          <Link to="work" smooth={true} duration={500}>
+          Work
+        </Link>
+          </li>
+          <li>
+          <Link to="contact" smooth={true} duration={500}>
+          Contact
+        </Link>
+          </li>
         </ul>
       </div>
 
@@ -36,11 +57,31 @@ const Header = () => {
       {/* mobile menu */}
     <div className={!header ? "hidden" :"absolute w-full h-screen top-0 left-0 flex flex-col justify-center items-center bg-[#223117]"}>
       <ul >
-          <li className="text-2xl py-4">Home</li>
-          <li className="text-2xl py-4">About</li>
-          <li className="text-2xl py-4">Skills</li>
-          <li className="text-2xl py-4">Work</li>
-          <li className="text-2xl py-4">Contact</li>
+          <li className="text-2xl py-4">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          Home
+        </Link>
+          </li>
+          <li className="text-2xl py-4">
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          About
+        </Link>
+          </li>
+          <li className="text-2xl py-4">
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+          Skills
+        </Link>
+          </li>
+          <li className="text-2xl py-4">
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+          Work
+        </Link>
+          </li>
+          <li className="text-2xl py-4">
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          Contact
+        </Link>
+          </li>
         </ul>
       </div>
 
