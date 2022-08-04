@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import expense from "../images/expense.jpg";
-import starwars from "../images/star-wars.jpg";
 import annie from "../images/annie.jpg";
 import food from "../images/food.jpg";
 
@@ -177,52 +176,6 @@ const Work = () => {
                 <button
                   onClick={openPopup}
                   id="3"
-                  className=" w-[100px] rounded-lg px-2 py-4 mx-3 font-bold bg-gray-300 text-[#ff007c] mt-14  hover:bg-[#ff007c] hover:text-gray-300 hover:duration-300"
-                >
-                  Close
-                </button>
-              </div>
-            )}
-          </div>
-
-          <div
-            style={{ backgroundImage: `url(${starwars})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto shadow-lg shadow-[#040c16] content-div relative"
-          >
-            <div className="opacity-0 group-hover:opacity-100 duration-700">
-              <span className="text-2xl tracking-wider text-white font-bold">
-                <h2>Star wars characters</h2>
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://chioma-star-wars.netlify.app/">
-                  <button className="rounded-lg px-3 py-4 mx-3 font-bold bg-gray-300 text-[#ff007c] hover:bg-[#ff007c] hover:text-gray-300 hover:duration-300">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/chiomaT/Decagon-week1-task">
-                  <button className="rounded-lg px-3 py-4 mx-3 font-bold bg-gray-300 text-[#ff007c] hover:bg-[#ff007c] hover:text-gray-300 hover:duration-300">
-                    Code
-                  </button>
-                </a>
-                <div className="modal-btn ">
-                  <button
-                    onClick={(e) => openPopup(e)}
-                    id="4"
-                    className="rounded-lg px-2  mt-3 font-bold bg-none text-[#ff007c] hover:bg-none hover:text-gray-300 hover:duration-300"
-                  >
-                    More
-                  </button>
-                </div>
-              </div>
-            </div>
-            {modal4 && (
-              <div className=" absolute modal-text top-0 left-0 w-full h-full bg-black flex flex-col justify-center p-4  text-gray-100">
-                <h3>
-                A HTML, CSS and JavaScript application for displaying different star-wars characters and their description.
-                </h3>
-                <button
-                  onClick={openPopup}
-                  id="4"
                   className=" w-[100px] rounded-lg px-2 py-4 mx-3 font-bold bg-gray-300 text-[#ff007c] mt-14  hover:bg-[#ff007c] hover:text-gray-300 hover:duration-300"
                 >
                   Close
