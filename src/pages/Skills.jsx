@@ -11,14 +11,14 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="mt-36  bg-[#000000] text-gray-200 w-full h-full "
+      className="pt-20  md:mt-36 bg-[#000000] text-gray-200 w-full md:skills-section  "
     >
       <div
         name="conainer"
         className="max-w-[1000px] mx-auto w-full h-full p-4 flex flex-col justify-center "
       >
         <div>
-          <p className="text-3xl text-gray-50 font-bold inline border-b-4 border-[#ff007c] sm:pt-44 md:text-4xl ">
+          <p className="text-3xl text-gray-50 font-bold inline border-b-4 border-[#ff007c] md:pt-44 md:text-4xl ">
             Skills
           </p>
           <p className="py-4 text-3xl mt-4 md:mt-0 md:text-2xl">

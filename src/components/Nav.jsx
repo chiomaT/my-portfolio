@@ -16,14 +16,14 @@ const Header = () => {
   return (
     <>
       <div className="fixed bg-[#000000] flex justify-between items-center px-4 w-full h-[80px] text-gray-300">
-        <div className="header-logo text-[#e64096]">Header</div>
+        <div className="header-logo text-[#e64096]"></div>
 
         {/* nav links */}
         <div className="nav-links">
           <ul className=" hidden md:flex">
             <li>
               <Link to="home" smooth={true} duration={700}>
-                Home
+                Profile
               </Link>
             </li>
             <li>
@@ -42,7 +42,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={700}>
+              <Link to="contact-form" smooth={true} duration={700}>
                 Contact
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
               >
-                Home
+                Profile
               </Link>
             </li>
             <li className="text-2xl py-4">
@@ -152,16 +152,13 @@ const Header = () => {
                 duration={500}
                 className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-500"
               >
-          
                 Email <MdMarkEmailUnread size={30} />
               </Link>
-           
             </li>
 
             <li className=" w-[160px] h-[60px] flex justify-between items-center">
               <a
                 href={Resume}
-                target="_blank"
                 className="flex justify-between items-center w-full text-gray-200 ml-[-100px] hover:ml-[-10px] duration-500"
               >
                 Resume <BsFillPersonDashFill size={30} />

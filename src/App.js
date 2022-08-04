@@ -1,9 +1,13 @@
-import About from './components/About'
-import Header from './components/Header'
-import Home from './components/Home'
-import Skills from './components/Skills'
-import Work from './components/Work'
-import Contact from './components/Contact'
+import About from './pages/About'
+import Header from './components/Nav'
+import Home from './pages/Profile'
+import Skills from './pages/Skills'
+import Work from './pages/Projects'
+import ContactForm from './pages/ContactForm'
+
+
+
+// import InputField from './components/InputField'
 function App() {
   return (
     <div className="App">
@@ -12,7 +16,12 @@ function App() {
    <About />
    <Skills />
    <Work />
-   <Contact />
+   <ContactForm />
+  
+  
+  
+   {/* <Contact /> */}
+   {/* <InputField /> */}
     </div>
   );
 }

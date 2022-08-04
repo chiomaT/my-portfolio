@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@layer directive {
+  body {
+    @apply font-[Poppins];
+    @apply bg-black;
+  }
+}
 @layer base {
   li {
     @apply px-4;
     @apply cursor-pointer;
+    @apply hover:text-[#ff007c];
+    @apply duration-300;
   }
 }
 
-.content-div{
+.content-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
-.content-div:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(112, 117, 255, 0.8),
-    hsla(242,74%,64%,0.8)
-  
-  );
-  
+
+@media only screen and (max-width: 600px) {
+  .work-section {
+    padding-top: 35rem;
+  }
+
+.skills-section {
+  padding-top: 30rem;
+ 
 }
+.social-icons {
+  padding-top: 5rem;
+}
+}
+
